@@ -1,7 +1,8 @@
 import { useGLTF } from "@react-three/drei";
-import React, { useRef } from "react";
-import gsap from "gsap";
+import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const Target = (props) => {
 	const targetRef = useRef();
 	const { scene } = useGLTF(
@@ -16,8 +17,9 @@ const Target = (props) => {
 			yoyo: true,
 		});
 	});
+
 	return (
-		<mesh {...props} ref={targetRef}>
+		<mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.5}>
 			<primitive object={scene} />
 		</mesh>
 	);
