@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Globe from "react-globe.gl";
-import { color } from "three/webgpu";
 import Button from "../components/Button";
 
 const About = () => {
+	const globeEl = useRef();
+
+	useEffect(() => {
+		const globe = globeEl.current;
+		if (globe) {
+			globe.controls().autoRotate = true;
+			globe.controls().autoRotateSpeed = 2;
+		}
+	}, []);
+
+	const [hasCopy, setHasCopy] = useState(false);
+
+	const handleCopy = () => {
+		navigator.clipboard.writeText("sambitsingha777@gmail.com");
+		setHasCopy(true);
+		setTimeout(() => {
+			setHasCopy(false);
+		}, 2000);
+	};
 	return (
 		<section className='c-space my-20'>
 			<div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
@@ -25,7 +43,7 @@ const About = () => {
 					</div>
 				</div>
 				<div className='col-span-1 xl:row-span-3'>
-					<div className='grid-container'>
+					<div className='grid-container flex justify-center items-center'>
 						<img
 							src='/assets/grid2.png'
 							alt='grid-2'
@@ -44,6 +62,7 @@ const About = () => {
 					<div className='grid-container'>
 						<div className='rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center'>
 							<Globe
+								ref={globeEl}
 								height={326}
 								width={326}
 								backgroundColor='rgba(0,0,0,0)'
@@ -86,8 +105,20 @@ const About = () => {
 						<img
 							src='/assets/grid4.png'
 							alt='grid-4'
-							className='w-full md:h-[126px] sm:h-[276px]'
+							className='w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top'
 						/>
+						<div className='space-y-2'>
+							<p className='grid-subtext text-center'>Contact me</p>
+							<div className='copy-container' onClick={handleCopy}>
+								<img
+									src={hasCopy ? "assets/tick.svg" : "assets/copy.svg"}
+									alt=''
+								/>
+								<p className='lg:text-xl md:text-base font-medium text-gray_gradient text-white'>
+									sambitsingha777@gmail.com
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
