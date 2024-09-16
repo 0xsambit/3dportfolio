@@ -58,11 +58,11 @@ export const clientReviews = [
 
 export const myProjects = [
 	{
-		title: "Podcastr - AI Podcast Platform",
-		desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+		title: "RipTide - Recreational Beach Finder App",
+		desc: "RipTide is a mobile application designed to ensure the safety and enhance the experience of coastal tourists by providing real-time suitability information for beaches in India. ",
 		subdesc:
-			"Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-		href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+			"Built as a unique Software-as-a-Service app with React Native, Tailwind CSS, JavaScript, Framer Motion and Convex, RipTide is designed for optimal performance and scalability.",
+		href: "https://github.com/0xsambit/RipTide",
 		texture: "/textures/project/project1.mp4",
 		logo: "/assets/project-logo1.png",
 		logoStyle: {
@@ -95,11 +95,11 @@ export const myProjects = [
 		],
 	},
 	{
-		title: "LiveDoc - Real-Time Google Docs Clone",
-		desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
+		title: "Interpreter for Custom Language",
+		desc: "This project is a Rust-based interpreter that allows you to execute custom scripts and programs written in a specific programming language.",
 		subdesc:
-			"With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-		href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
+			"Built with Rust, this interpreter is designed to be fast, efficient, and easy to use. It supports a wide range of features, including variables, loops, conditionals, and functions.",
+		href: "https://github.com/0xsambit/Interpreter-Rust",
 		texture: "/textures/project/project2.mp4",
 		logo: "/assets/project-logo2.png",
 		logoStyle: {
@@ -111,23 +111,8 @@ export const myProjects = [
 		tags: [
 			{
 				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
-			},
-			{
-				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
-			},
-			{
-				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-			{
-				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
+				name: "Rust",
+				path: "/assets/rust.png",
 			},
 		],
 	},
