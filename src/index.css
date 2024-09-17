@@ -13,6 +13,24 @@ body {
 	font-family: "General Sans", sans-serif;
 }
 
+/* Custom vertical scrollbar */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #010103;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #444;
+	border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
 @layer utilities {
 	.c-space {
 		@apply sm:px-10 px-5;
