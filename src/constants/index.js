@@ -28,7 +28,7 @@ export const clientReviews = [
 		position: "Marketing Director at GreenLeaf",
 		img: "assets/review1.png",
 		review:
-			"Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+			"Working with Sambit was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
 	},
 	{
 		id: 2,
@@ -36,7 +36,7 @@ export const clientReviews = [
 		position: "Founder of TechGear Shop",
 		img: "assets/review2.png",
 		review:
-			"Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+			"Sambit's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
 	},
 	{
 		id: 3,
@@ -44,7 +44,7 @@ export const clientReviews = [
 		position: "Project Manager at UrbanTech ",
 		img: "assets/review3.png",
 		review:
-			"I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+			"I can’t say enough good things about Sambit. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
 	},
 	{
 		id: 4,
@@ -52,7 +52,7 @@ export const clientReviews = [
 		position: "CEO of BrightStar Enterprises",
 		img: "assets/review4.png",
 		review:
-			"Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+			"Sambit was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
 	},
 ];
 
@@ -236,7 +236,7 @@ export const workExperiences = [
 		pos: "Open Source Contributor",
 		duration: "June 2024 - August 2024",
 		title:
-			"GirlScript Foundation is a non-profit organization that aims to provide opportunities. I contributed to the development of the GirlScript App, a mobile application that provides resources and support. I worked on implementing new features, fixing bugs, and optimizing performance. ",
+			"GirlScript Foundation is a non-profit organization that aims to provide opportunities. I contributed to various open-source projects, including the GirlScript Summer of Code, and helped mentor students in web development.",
 		icon: "/assets/gssoc.jpg",
 		animation: "clapping",
 	},
@@ -246,7 +246,7 @@ export const workExperiences = [
 		pos: "Junior Web Developer",
 		duration: "March 2024",
 		title:
-			"HackNITR 2024 is an annual hackathon organized by the National Institute of Technology, Rourkela. I participated as a junior web developer and worked on a team project to create a Javascript library that helps non-coders use the feel of using Github easy without any coding knowledge.",
+			"HackNITR 2024 is an annual hackathon organized by the NIT, Rourkela. I participated as a junior web developer and worked on a team project to create a Javascript library that helps non-coders use the feel of using Github easy without any coding knowledge.",
 		icon: "/assets/hacknittr.png",
 		animation: "salute",
 	},

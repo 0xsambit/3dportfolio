@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<section className='c-space pt-7 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5'>
+		<section className='c-space pt-14 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5'>
 			<div className='text-white-500 flex gap-2'>
 				<p>Terms & Conditions</p>
 				<p>|</p>
@@ -27,7 +27,7 @@ const Footer = () => {
 						/>
 					</div>
 				</a>
-				<a href='https://github.com/0xsambit' target='_blank'>
+				{/* <a href='https://github.com/0xsambit' target='_blank'>
 					<div className='social-icon'>
 						<img
 							src='/assets/github.svg'
@@ -35,7 +35,7 @@ const Footer = () => {
 							className='w-1/2 h-1/2'
 						/>
 					</div>
-				</a>
+				</a> */}
 			</div>
 			<p className='text-white-500'>© 2024 Sambit.All rights reserved </p>
 		</section>
