@@ -117,11 +117,11 @@ export const myProjects = [
 		],
 	},
 	{
-		title: "CarePulse - Health Management System",
-		desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
+		title: "Developer Portfolio Website",
+		desc: "This project is a personal 3d portfolio website that showcases my skills, projects, and experience as a web developer. It is designed to be visually appealing, user-friendly, and responsive.",
 		subdesc:
-			"With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-		href: "https://www.youtube.com/watch?v=lEflo_sc82g",
+			"Built with React.js, Three.js, Tailwind CSS and Framer Motion, this website features a 3D interactive design, smooth animations, and a clean, modern layout. It is optimized for performance and accessibility.",
+		href: "https://0xsambit.vercel.app",
 		texture: "/textures/project/project3.mp4",
 		logo: "/assets/project-logo3.png",
 		logoStyle: {
@@ -156,11 +156,11 @@ export const myProjects = [
 		],
 	},
 	{
-		title: "Horizon - Online Banking Platform",
-		desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
+		title: "Aora - A video streaming platform",
+		desc: "Aora is a video streaming App that allows users to watch, upload, and share videos with friends and family. It features a user-friendly interface, personalized recommendations, and a secure payment system.",
 		subdesc:
-			"Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
-		href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
+			"Built with React Native, Tailwind CSS and Appwrite, Aora is designed to be fast, reliable, and easy to use. It supports a wide range of features, including video playback, search, and user profiles.",
+		href: "https://github.com/0xsambit/Aora",
 		texture: "/textures/project/project4.mp4",
 		logo: "/assets/project-logo4.png",
 		logoStyle: {
@@ -179,53 +179,6 @@ export const myProjects = [
 				id: 2,
 				name: "TailwindCSS",
 				path: "assets/tailwindcss.png",
-			},
-			{
-				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-			{
-				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
-			},
-		],
-	},
-	{
-		title: "Imaginify - AI Photo Manipulation App",
-		desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
-		subdesc:
-			"Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-		href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
-		texture: "/textures/project/project5.mp4",
-		logo: "/assets/project-logo5.png",
-		logoStyle: {
-			backgroundColor: "#1C1A43",
-			border: "0.2px solid #252262",
-			boxShadow: "0px 0px 60px 0px #635BFF4D",
-		},
-		spotlight: "/assets/spotlight5.png",
-		tags: [
-			{
-				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
-			},
-			{
-				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
-			},
-			{
-				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-			{
-				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
 			},
 		],
 	},
@@ -269,32 +222,32 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
 	{
 		id: 1,
-		name: "Framer",
+		name: "To-Let Globe",
 		pos: "Lead Web Developer",
-		duration: "2022 - Present",
+		duration: "June 2024 - Present",
 		title:
-			"Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-		icon: "/assets/framer.svg",
+			"To-Let Globe is a real estate platform that connects property owners with tenants. As the lead web developer, I am responsible for overseeing the development of the platform, ensuring that it meets the needs of our users and business goals.",
+		icon: "/assets/tolet.jpeg",
 		animation: "victory",
 	},
 	{
 		id: 2,
-		name: "Figma",
-		pos: "Web Developer",
-		duration: "2020 - 2022",
+		name: "GirlScript Foundation",
+		pos: "Open Source Contributor",
+		duration: "June 2024 - August 2024",
 		title:
-			"Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-		icon: "/assets/figma.svg",
+			"GirlScript Foundation is a non-profit organization that aims to provide opportunities. I contributed to the development of the GirlScript App, a mobile application that provides resources and support. I worked on implementing new features, fixing bugs, and optimizing performance. ",
+		icon: "/assets/gssoc.jpg",
 		animation: "clapping",
 	},
 	{
 		id: 3,
-		name: "Notion",
+		name: "HackNITR 2024 Hackathon",
 		pos: "Junior Web Developer",
-		duration: "2019 - 2020",
+		duration: "March 2024",
 		title:
-			"Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-		icon: "/assets/notion.svg",
+			"HackNITR 2024 is an annual hackathon organized by the National Institute of Technology, Rourkela. I participated as a junior web developer and worked on a team project to create a Javascript library that helps non-coders use the feel of using Github easy without any coding knowledge.",
+		icon: "/assets/hacknittr.png",
 		animation: "salute",
 	},
 ];
