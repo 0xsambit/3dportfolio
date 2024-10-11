@@ -95,6 +95,38 @@ export const myProjects = [
 		],
 	},
 	{
+		title: "Interactive Animated Slider",
+		desc: "This project is an interactive animated slider that allows you to create and customize sliders for your website or app.",
+		subdesc:
+			"Built with simple HTML , CSS and Javascript , but very ease to use it React too.",
+		href: "https://0xsambit.github.io/slider_1", // Ensure this URL is correct and accessible
+		texture: "/textures/project/slider.mp4",
+		logo: "/assets/project-logo1.png",
+		logoStyle: {
+			backgroundColor: "#2A1816",
+			border: "0.2px solid #36201D",
+			boxShadow: "0px 0px 60px 0px #AA3C304D",
+		},
+		spotlight: "/assets/spotlight1.png",
+		tags: [
+			{
+				id: 1,
+				name: "React.js",
+				path: "/assets/react.svg",
+			},
+			{
+				id: 2,
+				name: "TailwindCSS",
+				path: "assets/tailwindcss.png",
+			},
+			{
+				id: 3,
+				name: "TypeScript",
+				path: "/assets/typescript.png",
+			},
+		],
+	},
+	{
 		title: "Interpreter for Custom Language",
 		desc: "This project is a Rust-based interpreter that allows you to execute custom scripts and programs written in a specific programming language.",
 		subdesc:
@@ -117,12 +149,44 @@ export const myProjects = [
 		],
 	},
 	{
+		title: "Interactive Rotating Slider",
+		desc: "This project is an interactive rotating slider that allows you to create and customize sliders for your website or app.",
+		subdesc:
+			"Built with simple HTML , CSS and Javascript , but very ease to use it React too.",
+		href: "https://0xsambit.github.io/rotate_slider", // Ensure this URL is correct and accessible
+		texture: "/textures/project/rotate.mp4",
+		logo: "/assets/project-logo1.png",
+		logoStyle: {
+			backgroundColor: "#2A1816",
+			border: "0.2px solid #36201D",
+			boxShadow: "0px 0px 60px 0px #AA3C304D",
+		},
+		spotlight: "/assets/spotlight1.png",
+		tags: [
+			{
+				id: 1,
+				name: "React.js",
+				path: "/assets/react.svg",
+			},
+			{
+				id: 2,
+				name: "TailwindCSS",
+				path: "assets/tailwindcss.png",
+			},
+			{
+				id: 3,
+				name: "TypeScript",
+				path: "/assets/typescript.png",
+			},
+		],
+	},
+	{
 		title: "Developer Portfolio Website",
 		desc: "This project is a personal 3d portfolio website that showcases my skills, projects, and experience as a web developer. It is designed to be visually appealing, user-friendly, and responsive.",
 		subdesc:
 			"Built with React.js, Three.js, Tailwind CSS and Framer Motion, this website features a 3D interactive design, smooth animations, and a clean, modern layout. It is optimized for performance and accessibility.",
 		href: "https://0xsambit.vercel.app",
-		texture: "/textures/project/project3.mp4",
+		texture: "/textures/project/portfolio.mp4",
 		logo: "/assets/project-logo3.png",
 		logoStyle: {
 			backgroundColor: "#60f5a1",
