@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Globe from "react-globe.gl";
 import Button from "../components/Button";
 
@@ -35,9 +35,10 @@ const About = () => {
 						<div>
 							<p className='grid-headtext'>Hi, I am Sambit</p>
 							<p className='grid-subtext'>
-								With 2 years of experience, I have honed my skills in frontend
-								and backend development , with a focus on commerical web
-								development
+								With 2 years of experience, I have honed my skills in Full
+								Stack Development , UI/UX Design and currntly committed to
+								App Development using React Native and Web Development in
+								Next.js
 							</p>
 						</div>
 					</div>
@@ -52,8 +53,8 @@ const About = () => {
 						<div>
 							<p className='grid-headtext'>Tech Stack</p>
 							<p className='grid-subtext'>
-								I am specialised in JavaScript and Rust with a focus on React
-								and Next.js ecosystems
+								I am specialised in JavaScript, TypeScript with a focus on
+								React and Next.js ecosystems, and React Native applications
 							</p>
 						</div>
 					</div>
@@ -100,8 +101,8 @@ const About = () => {
 						<div>
 							<p className='grid-headtext'>My passion for coding</p>
 							<p className='grid-subtext'>
-								I love solving problems and building things through code. Coding
-								isn't just my profession, it's my passion
+								I love solving problems and building things through code.
+								Coding isn&apos;t just my profession, it&apos;s my passion
 							</p>
 						</div>
 					</div>
