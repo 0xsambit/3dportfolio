@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Globe from "react-globe.gl";
 import Button from "../components/Button";
+import { motion } from "framer-motion";
 
 const About = () => {
 	const globeEl = useRef();
@@ -22,10 +23,44 @@ const About = () => {
 			setHasCopy(false);
 		}, 2000);
 	};
+
+	// Animation variants for staggered reveal
+	const containerVariants = {
+		hidden: { opacity: 0 },
+		visible: {
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.2,
+				delayChildren: 0.1,
+			},
+		},
+	};
+
+	const itemVariants = {
+		hidden: {
+			opacity: 0,
+			y: 50,
+			scale: 0.9,
+		},
+		visible: {
+			opacity: 1,
+			y: 0,
+			scale: 1,
+			transition: {
+				duration: 0.6,
+				ease: "easeOut",
+			},
+		},
+	};
 	return (
 		<section className='c-space my-20' id='about'>
-			<div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
-				<div className='col-span-1 xl:row-span-3 '>
+			<motion.div
+				className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'
+				variants={containerVariants}
+				initial='hidden'
+				whileInView='visible'
+				viewport={{ once: true, amount: 0.2 }}>
+				<motion.div className='col-span-1 xl:row-span-3' variants={itemVariants}>
 					<div className='grid-container'>
 						<img
 							src='/assets/grid1.png'
@@ -35,15 +70,14 @@ const About = () => {
 						<div>
 							<p className='grid-headtext'>Hi, I am Sambit</p>
 							<p className='grid-subtext'>
-								With 2 years of experience, I have honed my skills in Full
-								Stack Development , UI/UX Design and currntly committed to
-								App Development using React Native and Web Development in
-								Next.js
+								With 2 years of experience, I have honed my skills in Full Stack
+								Development , UI/UX Design and currntly committed to App Development
+								using React Native and Web Development in Next.js
 							</p>
 						</div>
 					</div>
-				</div>
-				<div className='col-span-1 xl:row-span-3'>
+				</motion.div>
+				<motion.div className='col-span-1 xl:row-span-3' variants={itemVariants}>
 					<div className='grid-container flex justify-center items-center'>
 						<img
 							src='/assets/grid2.png'
@@ -53,13 +87,13 @@ const About = () => {
 						<div>
 							<p className='grid-headtext'>Tech Stack</p>
 							<p className='grid-subtext'>
-								I am specialised in JavaScript, TypeScript with a focus on
-								React and Next.js ecosystems, and React Native applications
+								I am specialised in React, Next.js and React Native. Currently, I am
+								focused on App development and programming in Rust
 							</p>
 						</div>
 					</div>
-				</div>
-				<div className='col-span-1 xl:row-span-4'>
+				</motion.div>
+				<motion.div className='col-span-1 xl:row-span-4' variants={itemVariants}>
 					<div className='grid-container'>
 						<div className='rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center'>
 							<Globe
@@ -75,9 +109,7 @@ const About = () => {
 							/>
 						</div>
 						<div>
-							<p className='grid-headtext'>
-								I work remotely across most time zones
-							</p>
+							<p className='grid-headtext'>I work remotely across most time zones</p>
 							<p className='grid-subtext'>
 								I am based in India, with remote work available
 							</p>
@@ -90,8 +122,8 @@ const About = () => {
 							</a>
 						</div>
 					</div>
-				</div>
-				<div className='xl:col-span-2 xl:row-span-3'>
+				</motion.div>
+				<motion.div className='xl:col-span-2 xl:row-span-3' variants={itemVariants}>
 					<div className='grid-container'>
 						<img
 							src='/assets/grid3.png'
@@ -101,13 +133,13 @@ const About = () => {
 						<div>
 							<p className='grid-headtext'>My passion for coding</p>
 							<p className='grid-subtext'>
-								I love solving problems and building things through code.
-								Coding isn&apos;t just my profession, it&apos;s my passion
+								I love solving problems and building things through code. Coding
+								isn&apos;t just my profession, it&apos;s my passion
 							</p>
 						</div>
 					</div>
-				</div>
-				<div className='xl:col-span-1 xl:row-span-2'>
+				</motion.div>
+				<motion.div className='xl:col-span-1 xl:row-span-2' variants={itemVariants}>
 					<div className='grid-container'>
 						<img
 							src='/assets/grid4.png'
@@ -117,18 +149,15 @@ const About = () => {
 						<div className='space-y-2'>
 							<p className='grid-subtext text-center'>Contact me</p>
 							<div className='copy-container' onClick={handleCopy}>
-								<img
-									src={hasCopy ? "assets/tick.svg" : "assets/copy.svg"}
-									alt=''
-								/>
+								<img src={hasCopy ? "assets/tick.svg" : "assets/copy.svg"} alt='' />
 								<p className='lg:text-xl md:text-base font-medium text-gray_gradient text-white'>
 									sambitsingha777@gmail.com
 								</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+				</motion.div>
+			</motion.div>
 		</section>
 	);
 };

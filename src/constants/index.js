@@ -27,139 +27,42 @@ export const clientReviews = [
 		name: "Emily Johnson",
 		position: "Marketing Director at GreenLeaf",
 		img: "assets/review1.png",
-		review: "Working with Sambit was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+		review:
+			"Working with Sambit was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
 	},
 	{
 		id: 2,
 		name: "Mark Rogers",
 		position: "Founder of TechGear Shop",
 		img: "assets/review2.png",
-		review: "Sambit's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+		review:
+			"Sambit's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
 	},
 	{
 		id: 3,
 		name: "John Dohsas",
 		position: "Project Manager at UrbanTech ",
 		img: "assets/review3.png",
-		review: "I can’t say enough good things about Sambit. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+		review:
+			"I can’t say enough good things about Sambit. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
 	},
 	{
 		id: 4,
 		name: "Ether Smith",
 		position: "CEO of BrightStar Enterprises",
 		img: "assets/review4.png",
-		review: "Sambit was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+		review:
+			"Sambit was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
 	},
 ];
 
 export const myProjects = [
 	{
-		title: "YC- Directory",
-		desc: "YC-Directory is a platform for startup founders and entrepreneurs to pitch their startup ideas on the platform. It is inspired by the famous Startup accelerator Y-Combinator",
-		subdesc: "Built as a unique Software-as-a-Service app with Next.js, Tailwind CSS, JavaScript, Framer Motion and Sanity, YC-Directory is designed for optimal performance and scalability.",
-		href: "https://github.com/0xsambit/yc_directory01",
-		texture: "/textures/project/project1.mp4",
-		logo: "/assets/project-logo1.png",
-		logoStyle: {
-			backgroundColor: "#2A1816",
-			border: "0.2px solid #36201D",
-			boxShadow: "0px 0px 60px 0px #AA3C304D",
-		},
-		spotlight: "/assets/spotlight1.png",
-		tags: [
-			{
-				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
-			},
-			{
-				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
-			},
-			{
-				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-			{
-				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
-			},
-		],
-	},
-	{
-		title: "RipTide - Recreational Beach Finder App",
-		desc: "RipTide is a mobile application designed to ensure the safety and enhance the experience of coastal tourists by providing real-time suitability information for beaches in India. ",
-		subdesc: "Built as a unique Software-as-a-Service app with React Native, Tailwind CSS, JavaScript, Framer Motion and Convex, RipTide is designed for optimal performance and scalability.",
-		href: "https://github.com/0xsambit/RipTide",
-		texture: "/textures/project/project1.mp4",
-		logo: "/assets/project-logo1.png",
-		logoStyle: {
-			backgroundColor: "#2A1816",
-			border: "0.2px solid #36201D",
-			boxShadow: "0px 0px 60px 0px #AA3C304D",
-		},
-		spotlight: "/assets/spotlight1.png",
-		tags: [
-			{
-				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
-			},
-			{
-				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
-			},
-			{
-				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-			{
-				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
-			},
-		],
-	},
-	{
-		title: "Interactive Animated Slider",
-		desc: "This project is an interactive animated slider that allows you to create and customize sliders for your website or app.",
-		subdesc: "Built with simple HTML , CSS and Javascript , but very ease to use it React too.",
-		href: "https://0xsambit.github.io/slider_1", // Ensure this URL is correct and accessible
-		texture: "/textures/project/slider.mp4",
-		logo: "/assets/project-logo1.png",
-		logoStyle: {
-			backgroundColor: "#2A1816",
-			border: "0.2px solid #36201D",
-			boxShadow: "0px 0px 60px 0px #AA3C304D",
-		},
-		spotlight: "/assets/spotlight1.png",
-		tags: [
-			{
-				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
-			},
-			{
-				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
-			},
-			{
-				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-		],
-	},
-	{
 		title: "Interpreter for Custom Language",
-		desc: "This project is a Rust-based interpreter that allows you to execute custom scripts and programs written in a specific programming language.",
-		subdesc: "Built with Rust, this interpreter is designed to be fast, efficient, and easy to use. It supports a wide range of features, including variables, loops, conditionals, and functions.",
+		desc:
+			"This project is a Rust-based interpreter that allows you to execute custom scripts and programs written in a specific programming language.",
+		subdesc:
+			"Built with Rust, this interpreter is designed to be fast, efficient, and easy to use. It supports a wide range of features, including variables, loops, conditionals, and functions.",
 		href: "https://github.com/0xsambit/Interpreter-Rust",
 		texture: "/textures/project/project2.mp4",
 		logo: "/assets/project-logo2.png",
@@ -178,97 +81,25 @@ export const myProjects = [
 		],
 	},
 	{
-		title: "Interactive Rotating Slider",
-		desc: "This project is an interactive rotating slider that allows you to create and customize sliders for your website or app.",
-		subdesc: "Built with simple HTML , CSS and Javascript , but very ease to use it React too.",
-		href: "https://0xsambit.github.io/rotate_slider", // Ensure this URL is correct and accessible
-		texture: "/textures/project/rotate.mp4",
-		logo: "/assets/project-logo1.png",
+		title: "Winix",
+		desc:
+			"Winix is a simple, Rust based cli tool that lets you feel Linux commands on Windows. ",
+		subdesc:
+			"Built with Rust, this cli is designed to be fast, efficient, and easy to use. It supports a wide range of features, including variables, loops, conditionals, and functions.",
+		href: "https://github.com/0xsambit/winix",
+		texture: "/textures/project/project.mp4",
+		logo: "/assets/project-logo2.png",
 		logoStyle: {
-			backgroundColor: "#2A1816",
-			border: "0.2px solid #36201D",
-			boxShadow: "0px 0px 60px 0px #AA3C304D",
+			backgroundColor: "#13202F",
+			border: "0.2px solid #17293E",
+			boxShadow: "0px 0px 60px 0px #2F6DB54D",
 		},
-		spotlight: "/assets/spotlight1.png",
+		spotlight: "/assets/spotlight2.png",
 		tags: [
 			{
 				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
-			},
-			{
-				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
-			},
-			{
-				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-		],
-	},
-	{
-		title: "Developer Portfolio Website",
-		desc: "This project is a personal 3d portfolio website that showcases my skills, projects, and experience as a web developer. It is designed to be visually appealing, user-friendly, and responsive.",
-		subdesc: "Built with React.js, Three.js, Tailwind CSS and Framer Motion, this website features a 3D interactive design, smooth animations, and a clean, modern layout. It is optimized for performance and accessibility.",
-		href: "https://0xsambit.vercel.app",
-		texture: "/textures/project/portfolio.mp4",
-		logo: "/assets/project-logo3.png",
-		logoStyle: {
-			backgroundColor: "#60f5a1",
-			background:
-				"linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
-			border: "0.2px solid rgba(208, 213, 221, 1)",
-			boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
-		},
-		spotlight: "/assets/spotlight3.png",
-		tags: [
-			{
-				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
-			},
-			{
-				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
-			},
-			{
-				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-			{
-				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
-			},
-		],
-	},
-	{
-		title: "Aora - A video streaming platform",
-		desc: "Aora is a video streaming App that allows users to watch, upload, and share videos with friends and family. It features a user-friendly interface, personalized recommendations, and a secure payment system.",
-		subdesc: "Built with React Native, Tailwind CSS and Appwrite, Aora is designed to be fast, reliable, and easy to use. It supports a wide range of features, including video playback, search, and user profiles.",
-		href: "https://github.com/0xsambit/Aora",
-		texture: "/textures/project/project4.mp4",
-		logo: "/assets/project-logo4.png",
-		logoStyle: {
-			backgroundColor: "#0E1F38",
-			border: "0.2px solid #0E2D58",
-			boxShadow: "0px 0px 60px 0px #2F67B64D",
-		},
-		spotlight: "/assets/spotlight4.png",
-		tags: [
-			{
-				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
-			},
-			{
-				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
+				name: "Rust",
+				path: "/assets/rust.png",
 			},
 		],
 	},
@@ -315,7 +146,8 @@ export const workExperiences = [
 		name: "Tensor Solution Tech Pvt Ltd",
 		pos: "Application Developer Intern",
 		duration: "Feb 2025 - Present",
-		title: "At Tensor, theey specialize in harnessing the power of advanced technologies to empower businesses and individuals alike. With a team of skilled professionals and a commitment to innovation, they deliver tailor-made solutions that drive growth, efficiency, and success.",
+		title:
+			"At Tensor, theey specialize in harnessing the power of advanced technologies to empower businesses and individuals alike. With a team of skilled professionals and a commitment to innovation, they deliver tailor-made solutions that drive growth, efficiency, and success.",
 		icon: "/assets/tensor.jpeg",
 		animation: "victory",
 	},
@@ -324,7 +156,8 @@ export const workExperiences = [
 		name: "To-Let Globe",
 		pos: "Lead Web Developer",
 		duration: "Feb 2024 - July 2024",
-		title: "To-Let Globe is a real estate platform that connects property owners with tenants. As the lead web developer, I am responsible for overseeing the development of the platform, ensuring that it meets the needs of our users and business goals.",
+		title:
+			"To-Let Globe is a real estate platform that connects property owners with tenants. As the lead web developer, I am responsible for overseeing the development of the platform, ensuring that it meets the needs of our users and business goals.",
 		icon: "/assets/tolet.jpeg",
 		animation: "clapping",
 	},
@@ -333,7 +166,8 @@ export const workExperiences = [
 		name: "GirlScript Foundation",
 		pos: "Open Source Contributor",
 		duration: "June 2024 - August 2024",
-		title: "GirlScript Foundation is a non-profit organization that aims to provide opportunities. I contributed to various open-source projects, including the GirlScript Summer of Code, and helped mentor students in web development.",
+		title:
+			"GirlScript Foundation is a non-profit organization that aims to provide opportunities. I contributed to various open-source projects, including the GirlScript Summer of Code, and helped mentor students in web development.",
 		icon: "/assets/gssoc.jpg",
 		animation: "clapping",
 	},
@@ -342,7 +176,8 @@ export const workExperiences = [
 		name: "HackNITR 2024 Hackathon",
 		pos: "Junior Web Developer",
 		duration: "March 2024",
-		title: "HackNITR 2024 is an annual hackathon organized by the NIT, Rourkela. I participated as a junior web developer and worked on a team project to create a Javascript library that helps non-coders use the feel of using Github easy without any coding knowledge.",
+		title:
+			"HackNITR 2024 is an annual hackathon organized by the NIT, Rourkela. I participated as a junior web developer and worked on a team project to create a Javascript library that helps non-coders use the feel of using Github easy without any coding knowledge.",
 		icon: "/assets/hacknittr.png",
 		animation: "salute",
 	},
