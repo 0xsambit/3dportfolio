@@ -103,6 +103,29 @@ export const myProjects = [
 			},
 		],
 	},
+	{
+		title: "Mobibharat Seller",
+		desc:
+			"Mobibharat Seller is a comprehensive platform designed for sellers to manage their online stores with ease.",
+		subdesc:
+			"Built with React Native, this platform offers a seamless user experience across devices. It includes features like product management, order tracking, and customer engagement tools, qr code generation, and more.",
+		href: "/",
+		texture: "/",
+		logo: "/assets/project-logo2.png",
+		logoStyle: {
+			backgroundColor: "#13202F",
+			border: "0.2px solid #17293E",
+			boxShadow: "0px 0px 60px 0px #2F6DB54D",
+		},
+		spotlight: "/assets/spotlight2.png",
+		tags: [
+			{
+				id: 1,
+				name: "React",
+				path: "/assets/react.svg",
+			},
+		],
+	},
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
