@@ -5,8 +5,14 @@ export default {
 		extend: {
 			fontFamily: {
 				generalsans: ["General Sans", "sans-serif"],
+				mono: ["JetBrains Mono", "monospace"],
 			},
 			colors: {
+				accent: {
+					DEFAULT: "#2563EB",
+					light: "#3B82F6",
+					dark: "#1D4ED8",
+				},
 				black: {
 					DEFAULT: "#000",
 					100: "#010103",
@@ -25,6 +31,20 @@ export default {
 			},
 			backgroundImage: {
 				terminal: "url('/assets/terminal.png')",
+			},
+			animation: {
+				marquee: "marquee 30s linear infinite",
+				"marquee-reverse": "marquee-reverse 30s linear infinite",
+			},
+			keyframes: {
+				marquee: {
+					"0%": { transform: "translateX(0%)" },
+					"100%": { transform: "translateX(-50%)" },
+				},
+				"marquee-reverse": {
+					"0%": { transform: "translateX(-50%)" },
+					"100%": { transform: "translateX(0%)" },
+				},
 			},
 		},
 	},

@@ -1,103 +1,100 @@
-import { Suspense, useState } from "react";
-import { myProjects } from "../constants";
-import { Canvas } from "@react-three/fiber";
-import { Center, OrbitControls } from "@react-three/drei";
-import CanvasLoader from "../components/CanvasLoader";
-import DemoComputer from "../components/DemoComputer";
-const projectCount = myProjects.length;
+import { myProjects } from "../constants/index";
+import { SpotlightCard } from "../components/ui/SpotlightCard";
+import { ScrollReveal } from "../components/ui/ScrollReveal";
 
 const Projects = () => {
-	const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
-	const currentProject = myProjects[selectedProjectIndex];
-	const handleNavigation = (direction) => {
-		setSelectedProjectIndex((prevIndex) => {
-			if (direction === "previous") {
-				return prevIndex === 0 ? projectCount - 1 : prevIndex - 1;
-			} else {
-				return prevIndex === projectCount - 1 ? 0 : prevIndex + 1;
-			}
-		});
-	};
 	return (
-		<section className='c-space my-20' id='work'>
-			<p className='head-text'>My Work</p>
-			<div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full'>
-				<div className='flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200'>
-					<div className='absolute top-0 right-0'>
-						<img
-							src={currentProject.spotlight}
-							alt='spotlight'
-							className='w-ful h-96 object-cover rounded-xl'
-						/>
-					</div>
-					<div
-						className='p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-md'
-						style={currentProject.logoStyle}>
-						<img
-							src={currentProject.logo}
-							alt='logo'
-							className='w-10 h-10 shadow-sm'
-						/>
-					</div>
-					<div className='flex flex-col gap-5 text-white-600 my-5'>
-						<p className='text-white text-2xl font-semibold animatedText'>
-							{currentProject.title}
-						</p>
-						<p className='animatedText'>{currentProject.desc}</p>
-						<p className='animatedText'>{currentProject.subdesc}</p>
-					</div>
-					<div className='flex items-center justify-between flex-wrap gap-5'>
-						<div className='items-center flex gap-3'>
-							{currentProject.tags.map((tag, index) => (
-								<div key={index} className='tech-logo'>
-									<img src={tag.path} alt={tag.name} />
+		<section className="c-space my-20" id="projects">
+			<ScrollReveal direction="up">
+				<h2 className="head-text mb-2">Featured Projects</h2>
+				<p className="text-white-600 text-base mb-10 max-w-xl">
+					A selection of projects that showcase my range — from AR platforms to
+					Rust compilers.
+				</p>
+			</ScrollReveal>
+
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+				{myProjects.map((project, index) => (
+					<ScrollReveal key={project.title} direction="up" delay={index * 0.1}>
+						<SpotlightCard
+							className="p-6 h-full"
+							spotlightColor={
+								index === 0
+									? "rgba(37, 99, 235, 0.2)"
+									: "rgba(255, 255, 255, 0.1)"
+							}
+						>
+							<div className="flex flex-col h-full">
+								{/* Logo & Spotlight */}
+								<div className="flex items-start justify-between mb-5">
+									<div
+										className="p-3 rounded-lg backdrop-blur-sm w-fit"
+										style={project.logoStyle}
+									>
+										<img
+											src={project.logo}
+											alt={project.title}
+											className="w-8 h-8"
+										/>
+									</div>
+									{index === 0 && (
+										<span className="px-3 py-1 text-xs font-medium rounded-full bg-accent/10 text-accent border border-accent/20">
+											Flagship
+										</span>
+									)}
 								</div>
-							))}
-						</div>
-						<a
-							href={currentProject.href}
-							target='_blank'
-							rel='noreferrer'
-							className='flex items-center gap-2 cursor-pointer text-white-600'>
-							<p>Check Live Site</p>
-							<img src='/assets/arrow-up.png' alt='arrow' className='w-3 h-3' />
-						</a>
-					</div>
-					<div className='flex justify-between items-center mt-7'>
-						<button
-							className='arrow-btn'
-							onClick={() => handleNavigation("previous")}>
-							<img
-								src='/assets/left-arrow.png'
-								alt='left arrow'
-								className='w-4 h-4'
-							/>
-						</button>
-						<button
-							className='arrow-btn'
-							onClick={() => handleNavigation("next")}>
-							<img
-								src='/assets/right-arrow.png'
-								alt='right arrow'
-								className='w-4 h-4'
-							/>
-						</button>
-					</div>
-				</div>
-				<div className='border border-black-300 bg-black-200 rounded-lg h-96 md:h-full'>
-					<Canvas>
-						<ambientLight intensity={Math.PI} />
-						<directionalLight position={[10, 10, 5]} />
-						<Center>
-							<Suspense fallback={<CanvasLoader />}>
-								<group scale={2} position={[0, -3, -0]} rotation={[0, -0.1, 0]}>
-									<DemoComputer texture={currentProject.texture} />
-								</group>
-							</Suspense>
-						</Center>
-						<OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
-					</Canvas>
-				</div>
+
+								{/* Content */}
+								<h3 className="text-xl font-bold text-white mb-2">
+									{project.title}
+								</h3>
+								<p className="text-white-600 text-sm mb-2">{project.desc}</p>
+								<p className="text-white-500 text-xs mb-5 flex-1">
+									{project.subdesc}
+								</p>
+
+								{/* Tags & Link */}
+								<div className="flex items-center justify-between mt-auto">
+									<div className="flex items-center gap-2">
+										{project.tags.map((tag) => (
+											<div
+												key={tag.id}
+												className="w-8 h-8 rounded-md p-1.5 bg-white/5 flex items-center justify-center"
+											>
+												<img
+													src={tag.path}
+													alt={tag.name}
+													className="w-full h-full object-contain"
+												/>
+											</div>
+										))}
+									</div>
+									<a
+										href={project.href}
+										target="_blank"
+										rel="noreferrer"
+										className="flex items-center gap-2 text-sm text-white-600 hover:text-accent transition-colors group"
+									>
+										<span>View Project</span>
+										<svg
+											className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+										>
+											<path
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												strokeWidth={2}
+												d="M17 8l4 4m0 0l-4 4m4-4H3"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</SpotlightCard>
+					</ScrollReveal>
+				))}
 			</div>
 		</section>
 	);
